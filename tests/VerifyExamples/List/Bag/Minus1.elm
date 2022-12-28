@@ -16,11 +16,11 @@ import List.Bag exposing (..)
 
 spec1 : Test.Test
 spec1 =
-    Test.test "#minus: \n\n    minus [(\"🍇\",1),(\"🍎\",1),(\"🍊\",1)] []\n    --> []" <|
+    Test.test "#minus: \n\n    minus [ ( \"🍇\", 1 ), ( \"🍎\", 1 ), ( \"🍊\", 1 ) ] []\n    --> []" <|
         \() ->
             Expect.equal
                 (
-                minus [("🍇",1),("🍎",1),("🍊",1)] []
+                minus [ ( "🍇", 1 ), ( "🍎", 1 ), ( "🍊", 1 ) ] []
                 )
                 (
                 []

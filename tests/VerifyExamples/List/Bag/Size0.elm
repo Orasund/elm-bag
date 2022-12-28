@@ -16,11 +16,11 @@ import List.Bag exposing (..)
 
 spec0 : Test.Test
 spec0 =
-    Test.test "#size: \n\n    size [(\"🍇\",1),(\"🍎\",2),(\"🍊\",3)]\n    --> 6" <|
+    Test.test "#size: \n\n    size [ ( \"🍇\", 1 ), ( \"🍎\", 2 ), ( \"🍊\", 3 ) ]\n    --> 6" <|
         \() ->
             Expect.equal
                 (
-                size [("🍇",1),("🍎",2),("🍊",3)]
+                size [ ( "🍇", 1 ), ( "🍎", 2 ), ( "🍊", 3 ) ]
                 )
                 (
                 6

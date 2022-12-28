@@ -16,11 +16,11 @@ import List.Bag exposing (..)
 
 spec0 : Test.Test
 spec0 =
-    Test.test "#isEmpty: \n\n    isEmpty [(\"🍎\",42)]\n    --> False" <|
+    Test.test "#isEmpty: \n\n    isEmpty [ ( \"🍎\", 42 ) ]\n    --> False" <|
         \() ->
             Expect.equal
                 (
-                isEmpty [("🍎",42)]
+                isEmpty [ ( "🍎", 42 ) ]
                 )
                 (
                 False

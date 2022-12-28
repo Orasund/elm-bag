@@ -16,11 +16,11 @@ import List.Bag exposing (..)
 
 spec0 : Test.Test
 spec0 =
-    Test.test "#count: \n\n    count \"🍎\" [(\"🍊\",42)]\n    --> 0" <|
+    Test.test "#count: \n\n    count \"🍎\" [ ( \"🍊\", 42 ) ]\n    --> 0" <|
         \() ->
             Expect.equal
                 (
-                count "🍎" [("🍊",42)]
+                count "🍎" [ ( "🍊", 42 ) ]
                 )
                 (
                 0

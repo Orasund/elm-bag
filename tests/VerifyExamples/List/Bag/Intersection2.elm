@@ -16,11 +16,11 @@ import List.Bag exposing (..)
 
 spec2 : Test.Test
 spec2 =
-    Test.test "#intersection: \n\n    intersection [] [(\"🍇\",1),(\"🍎\",1),(\"🍊\",1)]\n    --> []" <|
+    Test.test "#intersection: \n\n    intersection [ ( \"🍇\", 1 ), ( \"🍎\", 1 ), ( \"🍊\", 1 ) ] []\n    --> []" <|
         \() ->
             Expect.equal
                 (
-                intersection [] [("🍇",1),("🍎",1),("🍊",1)]
+                intersection [ ( "🍇", 1 ), ( "🍎", 1 ), ( "🍊", 1 ) ] []
                 )
                 (
                 []

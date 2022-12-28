@@ -16,11 +16,11 @@ import List.Bag exposing (..)
 
 spec1 : Test.Test
 spec1 =
-    Test.test "#remove: \n\n    remove 1 \"🍎\" [(\"🍊\",1),(\"🍇\",1)]\n    --> [(\"🍊\",1),(\"🍇\",1)]" <|
+    Test.test "#remove: \n\n    remove 1 \"🍎\" [ ( \"🍊\", 1 ), ( \"🍇\", 1 ) ]\n    --> [(\"🍊\",1),(\"🍇\",1)]" <|
         \() ->
             Expect.equal
                 (
-                remove 1 "🍎" [("🍊",1),("🍇",1)]
+                remove 1 "🍎" [ ( "🍊", 1 ), ( "🍇", 1 ) ]
                 )
                 (
                 [("🍊",1),("🍇",1)]

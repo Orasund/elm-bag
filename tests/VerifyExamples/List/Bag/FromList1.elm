@@ -16,11 +16,11 @@ import List.Bag exposing (..)
 
 spec1 : Test.Test
 spec1 =
-    Test.test "#fromList: \n\n    fromList [\"🍇\",\"🍎\",\"🍊\"]\n    --> [(\"🍇\",1),(\"🍎\",1),(\"🍊\",1)]" <|
+    Test.test "#fromList: \n\n    fromList [ \"🍇\", \"🍎\", \"🍊\" ]\n    --> [(\"🍇\",1),(\"🍎\",1),(\"🍊\",1)]" <|
         \() ->
             Expect.equal
                 (
-                fromList ["🍇","🍎","🍊"]
+                fromList [ "🍇", "🍎", "🍊" ]
                 )
                 (
                 [("🍇",1),("🍎",1),("🍊",1)]

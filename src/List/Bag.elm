@@ -70,8 +70,6 @@ isEmpty =
 
     insert 1 "🍎" [ ( "🍊", 1 ), ( "🍇", 1 ) ] --> [("🍎",1),("🍊",1),("🍇",1)]
 
-    insert 1 "🍎" [ ( "🍊", 1 ), ( "🍎", 1 ), ( "🍇", 1 ) ] --> [("🍊",1),("🍎",2),("🍇",1)]
-
 -}
 insert : Int -> a -> List ( a, Int ) -> List ( a, Int )
 insert n a list =
@@ -215,7 +213,7 @@ minus l1 l2 =
         |> List.reverse
 
 
-{-| returns the intersection of two lists. The order of the second list gets preserved.
+{-| Intersect two lists. The order of the second list gets preserved.
 
     intersection [] [ ( "🍇", 1 ), ( "🍎", 1 ), ( "🍊", 1 ) ] --> []
 
