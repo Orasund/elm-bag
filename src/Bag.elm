@@ -1,9 +1,48 @@
-module Bag exposing (..)
+module Bag exposing
+    ( Bag
+    , count, empty, singleton
+    , insert, remove, plus, minus, intersection
+    , isEmpty, member, size
+    , fromList, toList, toAssociationList, fromAssociationList
+    )
+
+{-| Implementation of a Bag using a dictionary and an encoding function to turn any value into a comparable one.
+
+
+# Type
+
+@docs Bag
+
+
+# Constructor
+
+@docs count, empty, singleton
+
+
+# Operations
+
+@docs insert, remove, plus, minus, intersection
+
+
+# Methods
+
+@docs isEmpty, member, size
+
+
+# Conversion
+
+@docs fromList, toList, toAssociationList, fromAssociationList
+
+-}
 
 import Dict exposing (Dict)
-import Html exposing (a)
 
 
+{-| type alias of a bag.
+
+Use the encode function to access elements in the dictionary.
+
+-}
 type alias Bag comparable a =
     { content : Dict comparable ( a, Int )
     , encode : a -> comparable
