@@ -1,4 +1,4 @@
-# elm-list-as-bag
+# elm-bag
 
 Two implementations of a bag using a dict and an association list
 
