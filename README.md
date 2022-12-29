@@ -12,6 +12,10 @@ Two implementations of a bag using a dict and an association list
         , encode : a -> comparable
         }
 
+# Install
+
+    elm install Orasund/elm-bag
+
 # Usage
 
 You should use the list implementation if
@@ -32,6 +36,8 @@ For a smaller amount of keys the different is however not noticeable (at around 
 
 I would assume that for <10 keys you will not notice a difference.
 
-# Install
+# Alternatives
 
-    elm install Orasund/elm-bag
+Only alternative so far has been [JohnBugner/elm-bag](JohnBugner/elm-bag), which I used as a clear inspiration to this package. While JohnBugner used a normal dictionary, i used the same approach as the [AnyDict implementation by turboMaCk](https://dark.elm.dmy.fr/packages/turboMaCk/any-dict/latest/).
+
+I want to give credit to both JohnBugner and TurboMaCk for their contribution to the elm community. This package is just the combination of the previous works of both of them.
